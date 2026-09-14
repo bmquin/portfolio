@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: NDS-Custom, Poppins;
+    font-family: NDS-Custom, sans-serif;
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
@@ -102,7 +102,7 @@ section{
 }
 .about img{
     width: 30vw;
-    border-radius: 50%;
+    border-radius: 35%;
 }
 .info-box{
     display: flex;
@@ -205,4 +205,112 @@ section{
 }
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 255, 0));
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2rem;
+}
+.project-card{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.project-card:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+.project-card img{
+    width: 20vw;
+    border-radius: 1rem;
+}
+.project-card:hover .btn:hover{
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+}
+
+@media (max-width: 1200px){
+    header{
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .about .about-content{
+        gap: 3rem;
+    }
+    .experience-info{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px){
+    header{
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+    header .visit-btn{
+        display:none;
+    }
+    .about-content{
+        flex-direction:column;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .experience-info img{
+        width: 70vw;
+    }
+}
+
+@media (max-width: 600px){
+    header #menu-icon{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 3rem;
+        display: none;
+    }
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active{
+        display: block;
+    }
+    header{
+        padding: 1rem 5rem;
+        gap: 8rem;
+    }
+    header .logo{
+        font-size: 1.5rem;
+    }
+
+    .about-content img{
+        width: 80vw;
+    }
+    
 }
