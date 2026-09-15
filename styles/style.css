@@ -15,6 +15,14 @@
     list-style: none;
 }
 
+body{
+    background-image: url(../images/HGSS_Ilex_Forest-Morning.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 header{
     position: fixed;
     top: 1rem;
@@ -43,6 +51,7 @@ header{
 }
 
 li a{
+    padding: 2rem;
     position: relative;
     color: white;
     font-weight: 300;
