@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Site</title>
+    <title>Benjamin Quintero</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
@@ -16,6 +16,10 @@
 
             <li>
                 <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
             </li>
 
             <li>
@@ -37,9 +41,18 @@
 
             <div class="info-box">
                 <div class="text">
-                    <h3>Hi, my name is</h3>
-                    <h1>Benjamin Quintero</h1>
-                    <span>Web Developer</span>
+                    <h1>About Me</h1>
+                    <p>Hello! My name is Benjamin Quintero, and it's great to meet you! 
+                        I'm a Junior at the University of Central Florida currently studying Computer Science,
+                        and I'm passionate about web and in-browser app development.
+                        <br> <br>
+                        My experience with web development is primarily in the frontend, 
+                        such as with HTML/CSS/JS and Next.js, 
+                        but I also have a little bit of experience with backend and API development as well.
+                        <br> <br>
+                        My passion and goal with web development lies in creating apps that are 
+                        both useful and have a positive impact in a person's daily life. 
+                    </p>
                 </div>
 
             </div>
@@ -57,55 +70,147 @@
                 <div class="grid-card">
                     <i class="fa-solid fa-book"></i>
                     <span>Undergraduate Research Assistant</span>
-                    <h3>University of Central FloridaDecember 2024 - June 2025</h3>
-                    <p>yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap</p>
+                    <h3><br>University of Central Florida</h3>
+                    <h3>December 2024 - July 2025</h3>
+                    <p><br>While I was in this position, it involved me working directly with a multi-faceted system of both hardware and software, developing and editing code for a robotic arm, its peripherals, and its associated control menu.</p>
                 </div>
 
                 <div class="grid-card">
                     <i class="fa-solid fa-computer"></i>
-                    <span>Knight Hacks Club Member</span>
-                    <h3>University of Central Florida, January 2025 - Present</h3>
-                    <p>yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap</p>
+                    <span>Knight Hacks Student Organization Member</span>
+                    <h3><br>University of Central Florida</h3>
+                    <h3>January 2025 - Present</h3>
+                    <p><br>As a member of this organzation, I have been able to grow academically, socially, 
+                        and career-wise alongside an extensive and supportive community of like-minded people, 
+                        all while attending events, workshops, competitions, and more.</p>
                 </div>
 
             </div>
 
-            <img src="images/placeholder.jpg" alt="placeholder">
+            
 
         </div>
 
     </section>
 
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="grid">
+
+            <div class="grid-card">
+                <i class="fa-solid fa-code"></i>
+                <span>Languages</span>
+                <p>Java, C, C++, JavaScript, HTML, CSS, Dart</p>
+            </div>
+
+            <div class="grid-card">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Frameworks</span>
+                <p>NextJS, TailwindCSS, React, Flutter</p>
+            </div>
+
+            <div class="grid-card">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span>Developer Tools</span>
+                <p>Git, GitHub, Visual Studio Code, Visual Studio, IntelliJ, CLion</p>
+            </div>
+
+            <div class="grid-card">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Libraries</span>
+                <p>FLTK, CxUtils, OpenCV, YoloV8</p>
+            </div>
+
+        </div>
+    </section>
+
     <section id="projects" class="projects">
         <h2 class="section-title">Projects</h2>
+        <h1 class="section-subtitle">(Click on a card to flip it and learn more!)</h1>
         <div class="project-grid">
             <div class="project-card">
-                <img src="images/bso-dash.png" alt="">
-                <h3>BlowingOffSteam</h3>
-                <p>yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap</p>
-                <div class="btn-group">
-                    <div class="btn">Site Link</div>
-                    <div class="btn">GitHub Link</div>
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-img">
+                            <img src="images/bso-dash.png" alt="">
+                        </div>
+                        <div class="project-info">
+                            <h3>BlowingOffSteam</h3>
+                            <div class="btn-group">
+                                <div class="btn">Site Link</div>
+                                <div class="btn">GitHub Link</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <h3>BlowingOffSteam</h3>
+                        <p>Built as a passion project, and to test our skills. 
+                            <br><br>
+                            The purpose of this website is to create an app that 
+                            encourages users to spend less time playing games on Steam by allowing them to compete
+                            against each other, while still holding each other accountable through leaderboards, streaks, visual statistics, and more. 
+                            <br><br>
+                            Built using Next.js a frontend framework, Steam Web API to obtain user playtimes and access data from their steam accounts, and Neon Postgres as the database.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="images/ugotta-logo.png" alt="">
-                <h3>Project 2</h3>
-                <p>March-May 2026</p>
-                <div class="btn-group">
-                    <div class="btn">Devpost</div>
-                    <div class="btn">GitHub Link</div>
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-img">
+                            <img src="images/ugotta-logo.png" alt="">
+                        </div>
+                        <div class="project-info">
+                            <h3>UGotta</h3>
+                            <div class="btn-group">
+                                <a href="https://github.com/evanjania/POOSD-Group-6-Large-Project" target="_blank" rel="noopener noreferrer" class="btn">GitHub Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <h3>UGotta</h3>
+                        <p>Built as a project for Processes of Object Oriented System Development, during the Spring 2026 semester.
+                            <br><br>
+                            The purpose of this project was to create an app that 
+                            would allow users to create, save, and share recommendations between each other, 
+                            serving as a kind of online nokebook so users don't forget the things they enjoy.
+                            <br><br>
+                            Built using React as the frontend, Node.js and Express.js to handle backend and api functionality, and MongoDB as the database to store user information.
+                            <br>
+                            Accompanied by a mobile app built in Dart and Flutter using the same backend..
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <img src="images/placeholder.jpg" alt="placeholder">
-                <h3>Project 3</h3>
-                <p>yap yap yap yap yap yap yap yap yap yap yap yap yap yap yap</p>
-                <div class="btn-group">
-                    <div class="btn">Devpost</div>
-                    <div class="btn">GitHub Link</div>
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-img">
+                            <img src="images/handraiser.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <h3>HandRaising</h3>
+                            <div class="btn-group">
+                                <a href="https://devpost.com/software/hand-raise-detector" target="_blank" rel="noopener noreferrer" class="btn">Devpost</a>
+                                <a href="https://github.com/XavianM/HandRaising" target="_blank" rel="noopener noreferrer" class="btn">GitHub Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <h3>HandRaising</h3>
+                        <p>Built for the KnightHacks VIII Hackathon. 
+                            <br><br>
+                            The purpose of this web app was to create an app that 
+                            would detect when a student in a classroom has 
+                            had their hand raised for an extended period of time, notifying the instructor.
+                            <br><br>
+                            Built using Next.js a frontend framework, camera functionality and movement detection done in Python using the OpenCV library and YOLOv8 for training data.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,19 +218,35 @@
 
     <section class="contact" id="contact">
         <h2 class="section-title">Contact Info</h2>
-        <div class="btn-group">
-            <div class="btn">
-                Download Resume
-            </div>
-        </div>
 
-        <div class = "socials">
-            <a href="https://github.com/bmquin" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/benjamin-m-quintero/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+        <div class="grid">
+
+            <div class="grid-card">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact Info</span>
+                <p>Gmail: bquinteromdc@gmail.com</p>
+                <p>Outlook: be691391@ucf.edu</p>
+                <p>Location: Orlando, FL</p>
+            </div>
+
+            <div class="grid-card">
+                <i class="fa-solid fa-share-nodes"></i>
+                <span>Connect With Me</span>
+                <div class="socials">
+                    <a href="https://github.com/bmquin" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/benjamin-m-quintero/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="btn-group">
+                    <a href="other-assets/Benjamin_Quintero_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
 
