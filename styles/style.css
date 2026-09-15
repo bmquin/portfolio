@@ -15,27 +15,28 @@
     list-style: none;
 }
 
-body{
-    background-image: url(../images/HGSS_Ilex_Forest-Morning.png);
+html, body{
+    background-image: url(../images/website-bg.svg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
 }
 
 header{
     position: fixed;
-    top: 1rem;
+    top: 2rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 6rem;
     background-color: rgba(0, 0, 0, 0.8);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    padding: 0.5rem 1.5rem;
+    padding: 0.1rem 0.3rem;
     border-radius: 3rem;
     z-index: 1000;
 }
@@ -51,6 +52,7 @@ header{
 }
 
 li a{
+    display: inline-block;
     padding: 2rem;
     position: relative;
     color: white;
@@ -60,15 +62,15 @@ li a::before{
     position: absolute;
     content:'';
     width: 0;
-    left: 0;
+    left: 2rem;
     height: 5px;
-    top: 25px;
+    bottom: 1.7rem;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0));
+    background: linear-gradient(to right, #030E4B, #3a0ca3);
 }
 li a:hover::before{
-    width: 100%;
+    width: calc(100% - 4rem);
 }
 .visit-btn{
     padding: 0.8rem 1.5rem;
@@ -80,7 +82,6 @@ li a:hover::before{
     cursor: pointer;
     text-wrap: nowrap;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0));
 }
 
 .visit-btn:hover{
@@ -110,7 +111,7 @@ section{
     gap: 10rem;
 }
 .about img{
-    width: 30vw;
+    width: 40vw;
     border-radius: 35%;
 }
 .info-box{
@@ -145,18 +146,7 @@ section{
     background-color: black;
     color: white;
 }
-.socials{
-    display: flex;
-    gap: 2rem;
-}
-.socials i{
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-.socials i:hover{
-    transform: scale(1.1);
-}
+
 
 .section-title{
     text-align: center;
@@ -189,6 +179,8 @@ section{
     justify-content: left;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 .grid-card:hover{
     transform: scale(1.02);
@@ -207,13 +199,13 @@ section{
     color: transparent;
 }
 ::-webkit-scrollbar{
-    width: 20px;
+    width: 10px;
 }
 ::-webkit-scrollbar-track{
-    background-color: rgb(219, 219, 219);
+    background: #030E4B;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 255, 0));
+    background: #0A2181;
 }
 
 .project-grid{
@@ -233,6 +225,8 @@ section{
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 .project-card:hover{
     background-color: black;
@@ -247,6 +241,30 @@ section{
     border: 2px solid white;
     color: black;
     background-color: white;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.socials{
+    display: flex;
+    gap: 2rem;
+}
+.socials a,
+.socials a:visited{
+    color: inherit;
+}
+.socials i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.socials i:hover{
+    transform: scale(1.1);
 }
 
 @media (max-width: 1200px){
